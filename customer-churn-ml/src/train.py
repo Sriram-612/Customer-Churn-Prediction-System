@@ -18,7 +18,12 @@ from sklearn.preprocessing import OneHotEncoder, StandardScaler
 from sklearn.tree import DecisionTreeClassifier
 from sklearn.ensemble import RandomForestClassifier
 
-from preprocess import (
+if __name__ == "__main__" and __package__ is None:
+    import sys
+
+    sys.path.append(os.path.dirname(os.path.dirname(__file__)))
+
+from src.preprocess import (
     DATA_PATH,
     FEATURE_COLUMNS,
     clean_and_select_features,

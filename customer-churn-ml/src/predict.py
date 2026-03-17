@@ -5,7 +5,12 @@ from typing import Dict, Tuple
 import numpy as np
 import pandas as pd
 
-from preprocess import FEATURE_COLUMNS
+if __name__ == "__main__" and __package__ is None:
+    import sys
+
+    sys.path.append(os.path.dirname(os.path.dirname(__file__)))
+
+from src.preprocess import FEATURE_COLUMNS
 
 
 MODELS_DIR = "models"

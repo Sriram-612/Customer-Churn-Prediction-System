@@ -118,7 +118,8 @@ customer-churn-ml/
 cd customer-churn-ml
 ```
 
-3. **Create and activate a virtual environment** (recommended):
+3. **Create and activate a virtual environment** (recommended).
+For best compatibility on Windows, use **Python 3.11**:
 
 ```bash
 python -m venv venv

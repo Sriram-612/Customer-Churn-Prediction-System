@@ -3,7 +3,12 @@ import os
 import matplotlib.pyplot as plt
 import seaborn as sns
 
-from preprocess import DATA_PATH, clean_and_select_features, load_raw_data
+if __name__ == "__main__" and __package__ is None:
+    import sys
+
+    sys.path.append(os.path.dirname(os.path.dirname(__file__)))
+
+from src.preprocess import DATA_PATH, clean_and_select_features, load_raw_data
 
 
 REPORTS_DIR = "reports"
